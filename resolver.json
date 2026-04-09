@@ -1,5 +1,11 @@
 {
-    "known_repos": [
-        "https://github.com/PaoeniDev/regolith-filters"
-    ]
+  "formatVersion": "1.0.0",
+  "filters": {
+    "gametests-bun": {
+      "url": "github.com/PaoeniDev/regolith-filters"
+    },
+    "minify-all": {
+      "url": "github.com/PaoeniDev/regolith-filters"
+    }
+  }
 }
