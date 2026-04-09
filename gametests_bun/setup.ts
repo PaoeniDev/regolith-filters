@@ -17,7 +17,7 @@ if (!dataPath) {
     throw new Error("dataPath not found in config.json");
 }
 
-const gametestsDataPath = path.resolve(path.resolve(rootPath, dataPath), "gametests");
+const gametestsDataPath = path.resolve(path.resolve(rootPath, dataPath), "gametests_bun");
 
 if (fs.existsSync(gametestsDataPath)) {
     console.log("Installing dependencies for gametests in", gametestsDataPath);
