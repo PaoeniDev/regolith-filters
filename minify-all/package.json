@@ -1,0 +1,9 @@
+{
+  "name": "minify-all",
+  "version": "1.0.0",
+  "description": "Minify all JSON",
+  "dependencies": {
+    "fast-glob": "^3.3.3",
+    "json5": "^2.2.3"
+  }
+}

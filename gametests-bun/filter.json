@@ -1,0 +1,11 @@
+{
+    "description": "Compiles script-api into pack with Bun.",
+    "filters": [
+        {
+            "name": "Compiling script-api",
+			"runWith": "nodejs",
+			"script": "./index.js"
+        }
+    ],
+	"version": "1.0.0"
+}

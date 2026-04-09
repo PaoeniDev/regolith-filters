@@ -1,0 +1,11 @@
+{
+	"description": "Minify all JSON files.",
+	"filters": [
+		{
+			"name": "Minifying JSON files",
+			"runWith": "nodejs",
+			"script": "./minify.js"
+		}
+	],
+	"version": "1.0.0"
+}
