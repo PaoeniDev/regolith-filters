@@ -1,5 +1,5 @@
 {
-  "name": "gametests-bun",
+  "name": "gametests_bun",
   "module": "index.ts",
   "type": "module",
   "private": true,

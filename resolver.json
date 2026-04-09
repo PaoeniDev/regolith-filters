@@ -1,10 +1,10 @@
 {
   "formatVersion": "1.0.0",
   "filters": {
-    "gametests-bun": {
+    "gametests_bun": {
       "url": "github.com/PaoeniDev/regolith-filters"
     },
-    "minify-all": {
+    "minify_all": {
       "url": "github.com/PaoeniDev/regolith-filters"
     }
   }

@@ -1,5 +1,5 @@
 {
-  "name": "minify-all",
+  "name": "minify_all",
   "version": "1.0.0",
   "description": "Minify all JSON",
   "dependencies": {

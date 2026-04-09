@@ -6,7 +6,7 @@ const rootDir = process.cwd();
 
 const defaultSettings: DefaultSettings = {
     buildOptions: {
-        entrypoints: ["data/gametests-bun/src/main.ts"],
+        entrypoints: ["data/gametests_bun/src/main.ts"],
         outdir: "BP/scripts",
         naming: "main.js",
         format: "esm",
