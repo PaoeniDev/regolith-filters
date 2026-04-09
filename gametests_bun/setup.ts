@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path'
-import { JSON5 } from 'bun';
+import json5 from 'json5';
 import type { RegolithConfig } from './types';
 
 const rootPath = process.env.ROOT_DIR;
@@ -9,7 +9,7 @@ if (!rootPath) {
     process.exit(1);
 }
 const configPath = path.resolve(rootPath, "config.json");
-const config = JSON5.parse(await Bun.file(configPath).text()) as RegolithConfig;
+const config = json5.parse(await Bun.file(configPath).text()) as RegolithConfig;
 
 const dataPath = config.regolith.dataPath;
 

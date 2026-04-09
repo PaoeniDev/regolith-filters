@@ -3,7 +3,6 @@ import type { DefaultSettings } from "./types";
 
 const rootDir = process.cwd();
 
-
 const defaultSettings: DefaultSettings = {
     buildOptions: {
         entrypoints: ["data/gametests_bun/src/main.ts"],
