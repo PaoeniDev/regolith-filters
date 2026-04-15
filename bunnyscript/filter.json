@@ -1,0 +1,9 @@
+{
+    "description": "Script API bundler for JavaScript and TypeScript based on Bun.",
+    "filters": [
+        {
+			"runWith": "bun",
+			"script": "./bunnyscript.ts"
+        }
+    ]
+}

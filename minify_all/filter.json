@@ -1,0 +1,9 @@
+{
+    "description": "Minify all JSON files.",
+    "filters": [
+        {
+			"runWith": "bun",
+			"script": "./index.ts"
+        }
+    ]
+}
