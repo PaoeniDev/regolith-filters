@@ -3,7 +3,7 @@
     "filters": [
         {
 			"runWith": "bun",
-			"script": "./index.ts"
+			"script": "./minify.ts"
         }
     ]
 }
