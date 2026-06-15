@@ -1,6 +1,7 @@
 export interface DefaultSettings {
     buildOptions: Bun.BuildConfig,
-    debugBuild: boolean
+    debugBuild: boolean,
+    typeCheck: boolean
 }
 
 export interface RegolithConfig {

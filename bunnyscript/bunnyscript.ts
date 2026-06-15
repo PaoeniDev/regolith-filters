@@ -15,7 +15,8 @@ const defaultSettings: DefaultSettings = {
         minify: true,
         external: ["@minecraft/server", "@minecraft/server-ui"]
     },
-    debugBuild: false
+    debugBuild: false,
+    typeCheck: false
 }
 
 const argParsed = process.argv[2] ? JSON.parse(process.argv[2]) : {};
@@ -29,6 +30,20 @@ settings.buildOptions.entrypoints = settings.buildOptions.entrypoints.map((entry
 if (settings.debugBuild) {
     settings.buildOptions.minify = false;
     settings.buildOptions.sourcemap = "linked";
+}
+
+if (settings.typeCheck) {
+    const proc = Bun.spawn(["bunx", "tsc", "--noEmit"], {
+        stdout: "inherit",
+        stderr: "inherit",
+        cwd: path.join(cwdDir, "data/bunnyscript")
+    });
+
+    const exitCode = await proc.exited;
+
+    if (exitCode != 0) {
+        process.exit(1);
+    }
 }
 
 const p = performance.now();
